@@ -1,0 +1,9 @@
+[{
+    "form_id": 1,
+    "form_code": "sys_dic",
+    "form_name": "字典组"
+}, {
+    "form_id": 2,
+    "form_code": "sys_dic_item",
+    "form_name": "字典"
+}]

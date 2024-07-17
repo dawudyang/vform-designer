@@ -1,0 +1,782 @@
+{
+	"properties": [
+		{
+			"model": "api_title",
+			"widget": "input",
+			"label": "名称",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入",
+				"type": "text",
+				"style": {},
+				"clearable": true
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.clearable": true
+		},
+		{
+			"model": "api_code",
+			"widget": "input",
+			"label": "编码",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入",
+				"type": "text",
+				"style": {},
+				"clearable": true
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.clearable": true
+		},
+		{
+			"model": "api_key",
+			"widget": "input",
+			"label": "秘钥",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入",
+				"type": "password",
+				"style": {},
+				"clearable": true,
+				"showPassword": true
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.clearable": true,
+			"ui.type": "password",
+			"ui.showPassword": true
+		},
+		{
+			"model": "ip",
+			"widget": "input",
+			"label": "授权IP",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入",
+				"type": "textarea",
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.type": "textarea"
+		},
+		{
+			"model": "remark",
+			"widget": "input",
+			"label": "备注",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入",
+				"type": "text",
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			]
+		},
+		{
+			"model": "delete_flag",
+			"widget": "select",
+			"label": "状态",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "value",
+				"valueKey": "label",
+				"childrenKey": "children"
+			},
+			"enum": [
+				{
+					"label": "是",
+					"value": "F"
+				},
+				{
+					"label": "否",
+					"value": "T"
+				}
+			],
+			"ui": {
+				"type": "select",
+				"placeholder": "请选择",
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			]
+		},
+		{
+			"model": "sign_type",
+			"widget": "select",
+			"label": "签名方式",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "value",
+				"valueKey": "label",
+				"childrenKey": "children"
+			},
+			"enum": [
+				{
+					"label": "MD5",
+					"value": "MD5"
+				},
+				{
+					"label": "RSA",
+					"value": "RSA"
+				}
+			],
+			"ui": {
+				"type": "select",
+				"placeholder": "请选择",
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			]
+		},
+		{
+			"model": "open_time",
+			"widget": "timePicker",
+			"label": "开放时间段",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"type": "timePicker",
+				"placeholder": "请选择时间",
+				"startPlaceholder": "开始时间",
+				"endPlaceholder": "结束时间",
+				"editable": true,
+				"style": {},
+				"valueFormat": "HH:mm",
+				"isRange": true
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.valueFormat": "HH:mm",
+			"ui.isRange": true
+		},
+		{
+			"model": "concurrency",
+			"widget": "inputNumber",
+			"label": "并发数",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入数字",
+				"controls": true,
+				"type": "numbner",
+				"style": {},
+				"controlsPosition": "right"
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.controls": true,
+			"ui.controlsPosition": "right"
+		},
+		{
+			"model": "time_interval",
+			"widget": "inputNumber",
+			"label": "请求间隔",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"placeholder": "请输入数字",
+				"controls": true,
+				"type": "numbner",
+				"style": {},
+				"controlsPosition": "right"
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.controls": true,
+			"ui.controlsPosition": "right"
+		},
+		{
+			"model": "data_code",
+			"widget": "dataSelector",
+			"label": "数据集编码",
+			"source": {
+				"use": true,
+				"http": "data",
+				"resPath": "data",
+				"labelKey": "form_name",
+				"valueKey": "form_id",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"reserveKeyword": true,
+				"filterable": true,
+				"remote": true,
+				"maxCollapseTags": 1,
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			]
+		},
+		{
+			"model": "data_fields",
+			"widget": "checkbox",
+			"label": "数据集字段(联动编码)",
+			"source": {
+				"use": true,
+				"http": "data",
+				"resPath": "data?id=${data_code}",
+				"labelKey": "form_name",
+				"valueKey": "form_id",
+				"childrenKey": "children"
+			},
+			"enum": [
+				{
+					"label": "1",
+					"value": "选项1"
+				},
+				{
+					"label": "2",
+					"value": "选项2"
+				},
+				{
+					"label": "3",
+					"value": "选项3"
+				}
+			],
+			"ui": {
+				"type": "checkbox",
+				"style": {}
+			},
+			"col": {
+				"span": 24
+			},
+			"custom": {},
+			"rules": [
+				{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			]
+		},
+		{
+			"model": "button_929622",
+			"widget": "button",
+			"label": "按钮(外链)",
+			"source": {
+				"use": false,
+				"http": null,
+				"resPath": "data",
+				"labelKey": "label",
+				"valueKey": "value",
+				"childrenKey": "children"
+			},
+			"ui": {
+				"color": "#B54242"
+			},
+			"col": {},
+			"custom": {},
+			"rules": [{
+					"_type": "required",
+					"_name": "必填",
+					"_checked": false,
+					"required": true,
+					"message": "必填项",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "type",
+					"_name": "类型",
+					"_checked": false,
+					"type": "string",
+					"message": "类型错误",
+					"trigger": [
+						"change"
+					]
+				},
+				{
+					"_type": "pattern",
+					"_name": "正则",
+					"_checked": false,
+					"pattern": null,
+					"message": "不匹配当前正则",
+					"trigger": [
+						"change"
+					]
+				}
+			],
+			"ui.color": "#B54242",
+			"buttonAction": "newPage",
+			"buttonScript": "https://baidu.com"
+		}
+	],
+	"ui": {
+		"labelWidth": "120px",
+		"labelPosition": "top",
+		"showMessage": true,
+		"size": "default",
+		"group_id": 4,
+		"formSource": "",
+		"designer_name": "数据集设计器",
+		"designer_code": "formDataSet"
+	},
+	"row": {
+		"type": "flex",
+		"style": {
+			"flexWrap": "wrap"
+		},
+		"gutter": 20
+	},
+	"col": {}
+}
